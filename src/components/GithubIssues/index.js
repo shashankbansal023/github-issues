@@ -3,7 +3,7 @@ import IssueIcon from '../../icons/IssueIcon';
 import CommentIcon from '../../icons/CommentIcon';
 import './githubIssues.css';
 
-const API = "https://api.github.com/repos/facebook/react/issues"
+const GITHUB_ISSUES_API = "https://api.github.com/repos/facebook/react/issues"
 
 const GithubIssues = () => {
 
@@ -36,11 +36,7 @@ const GithubIssues = () => {
         const fetchData = async() => {
             try{
                 setLoading(true);
-                const res = await fetch(`${API}?page=${page}`,{
-                    headers:{
-                        Authorization: 'token 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'
-                    }
-                });
+                const res = await fetch(`${GITHUB_ISSUES_API}?page=${page}`);
                 const resData = await res.json();
                 setData([...data , ...resData]);
             }

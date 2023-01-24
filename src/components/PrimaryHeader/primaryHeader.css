@@ -1,0 +1,43 @@
+.primary-header{
+    margin-bottom: 10px;
+    background-color: rgb(231, 222, 222);
+    padding: 10px 10px 0 10px;
+}
+
+.repo-title{
+    font-weight: 600;
+    color: rgb(98, 19, 31)
+}
+
+.repo-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.repo-features{
+    display: flex;
+    gap: 10px;
+}
+.notifications , .star , .fork{
+    border-radius: 5px; 
+    outline: none;
+    cursor: pointer;
+}
+
+.tabs{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.issues{
+    border-bottom: 4px solid rgb(112, 112, 133);
+}
+
+@media  screen and (max-width: 1023px) {
+    .actions , .projects, .wiki , .security , .insights{
+        display: none;
+    }
+}

@@ -1,0 +1,85 @@
+
+.container {
+    margin: 0px 50px 5px 30px;
+    /* height: 140vh; */
+    /* overflow: scroll; */
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 92%;
+}
+.rowItem{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-height: 30px;
+    width: 99%;
+    padding: 5px;
+    align-items: center;
+    height: auto;
+    border-bottom: 1px solid black;
+}
+
+.title{
+    word-break: break-word;
+}
+
+.issueItem{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    align-items: center;
+    font-weight: 500;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.labelItem{
+    border-radius: 10px;
+    margin: 2px;
+    padding: 5px;
+    cursor:pointer;
+}
+
+.user-icon{
+    width: 20%;
+    display: flex;
+    justify-content: end;
+}
+
+.comments{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 12px;
+    margin-left: auto;
+}
+
+.img-icon{
+    border-radius: 50%;
+}
+
+.loading{
+    margin-left: 50px;
+}
+
+.user-details{
+    color: gray;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+    .user-icon{
+        display: none;
+    }
+
+    .comments{
+        display: none;
+    }
+
+    .rowItem{
+        width: 98%;
+    }
+    .container{
+        margin-right: 20px;
+    }
+
+}

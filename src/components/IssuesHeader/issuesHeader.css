@@ -1,19 +1,20 @@
 .issuesHeader{
     display: flex;
     /* width: 100%; */
-    margin: 50px 50px 0px 30px;
+    margin: auto;
     padding: 10px;
-    border: 1px solid black;
-    background-color: rgb(244, 244, 244);
-    border-radius: 5px;
-    width:91%;
+    border: 1px solid #d0d7de;
+    background-color: #f6f8fa;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width:78.5%;
+    margin-top: 50px;
 }
 
 .all-issues{
     display: flex;
     align-items: center;
     gap: 10px;
-    font-weight: bold;
 }
 
 .filters{
@@ -34,6 +35,6 @@
 
 @media screen and (max-width: 620px){
     .issuesHeader{
-        width: 85%;
+        width: 75%;
     }
 }

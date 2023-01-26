@@ -28,7 +28,6 @@ const GithubIssues = () => {
 
     useEffect (()=> {
         window.addEventListener('scroll' , handleScroll);
-
         return () => window.removeEventListener('scroll' , handleScroll);
     },[])
 
@@ -69,7 +68,7 @@ const GithubIssues = () => {
                     return (
                         <>
                         <div className="rowItem" key={obj.id}>
-                            <IssueIcon/>
+                            <IssueIcon className="issue-icon"/>
                             <div className='issueItem'>
                                 <div className="title">{obj.title}</div>
                                 {
@@ -93,8 +92,6 @@ const GithubIssues = () => {
                 })
             }
         </div>
-        {loading && <div className="loading">Loading ...</div>}
-
         </>
     )
 };

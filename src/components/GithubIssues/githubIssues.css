@@ -1,11 +1,11 @@
 
 .container {
-    margin: 0px 50px 5px 30px;
-    /* height: 140vh; */
-    /* overflow: scroll; */
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 92%;
+    margin:auto;
+    border: 1px solid #d0d7de;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 80%;
+    margin-bottom: 20px;
 }
 .rowItem{
     display: flex;
@@ -16,7 +16,12 @@
     padding: 5px;
     align-items: center;
     height: auto;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #d0d7de;
+    cursor: pointer;
+}
+
+.rowItem:hover{
+    background-color: #f6f8fa;
 }
 
 .title{
@@ -32,8 +37,12 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+.issue-icon > path {
+    fill:green;
+}
+
 .labelItem{
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 2px;
     padding: 5px;
     cursor:pointer;
@@ -66,6 +75,10 @@
     margin-left: 20px;
 }
 
+.issue-icon.svg.path {
+        fill: green;
+}
+
 @media screen and (max-width: 1023px) {
     .user-icon{
         display: none;
@@ -77,9 +90,6 @@
 
     .rowItem{
         width: 98%;
-    }
-    .container{
-        margin-right: 20px;
     }
 
 }
